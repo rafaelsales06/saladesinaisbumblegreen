@@ -1,16 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=League+Gothic&family=Montserrat:wght@300;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    
+
+    font-family: 'Krona One', sans-serif;
 }
+/* init Home */
 .Home{
+    background-image: url(../imgs/background/Back_com_notas.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+.logo{
+    width: 160px;
+}
+.head--line{
+    transform: translateY(-20px);
+}
+.head--one{
+    font-size: 4em;
+}
+.head--second{
+    font-size: 2em;
+}
+.story--teling{
+    width: 40%;
+    background-color: gray;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px black;
+}
+a{
+    text-decoration: none;
+}
+.button--cta{
+    
+    background-color: green;
+    margin-top: 40px;
+    padding: 10px 25px 10px 25px;
+    font-size: 1.4em;
+    color: black;
+    border-radius: 12px;
+    
+    background-color: rgb(39, 202, 6);
+    
+    box-shadow: 0 0 10px #88ff64,
+                0 0 5px #19bf03,
+                0 0 15px #14e21e;
+}
+.security{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.red{
+    color: #FF0000;
+}
+.green{
+    color: #3DF63C;
+}
+
+/* Evidences */
+
+.Evidences{
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.story--teling{
-    width: 60%;
-    height: 400px;
-    background-color: gray;
+.evi--title{
+    margin-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+}
+.exemp{
+    background-color: #3DF63C;
+    width: 200px;
+    height: 500px;
+    margin-top: 45px;
+}
+.promo{
+    margin-top: 70px;
+}
+.container-img{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.img{
+    object-fit: cover;
+    height: 550px;
+    width: 330px;
+}
+.carrosel{
+    display: inline-flex;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 550px;
+    width: 330px;
+}
+.state{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    margin-top: 10px;
+}
+.state-position{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(189, 189, 189);
+}
+.Esquerda{
+    position: absolute;
+    width: 32px;
+    transform: translate(-180px,400px);
+}
+.Direita{
+    position: absolute;
+    width: 32px;
+    transform: translate(180px,400px);
+}
+
+
+/* Benefits */
+.Benefits{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.line{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.benefits--title{
+    font-size: 2.4em;
+    font-family: 'Montserrat', sans-serif;
+}
+.benefits--box{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    
+}
+.benefits--box p{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+}
+/* Scarcity */
+.Scarcity{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    color: aliceblue;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+.scarcity--title{
+    font-size: 2.5em;
+}
+.scarcity--subtitle{
+    font-size: 1.2em;
+}
+.paragraf-one,.sideparagr--one{
+    font-size: 1.5em;
+    margin: 45px;
+}
+.timer{
+    font-size: 3em;
+}
+.initial--value{
+    font-size: 2em;
+    margin: 30px;
+}
+.final--value{
+    font-size: 5em;
+    margin: 30px;
+}
+
+
+
+
+@media (max-width:500px) {
+    /* Home */
+    .head--one{
+        font-size: 1.3em;
+    }
+    .head--second{
+        font-size: 0.7em;
+    }
+    .head--descript{
+        font-size: 0.7em;
+        margin-top: 30px;
+    }
+    .story--teling{
+        width: 95%;
+    }
+    .button--cta{
+        font-size: 0.8em;
+    }
+
+
+
+    /* Evidences */
+    .Evidences{
+        padding: 0px 15px;
+    }
+    .evi--title{
+        font-size: 1.3em;
+        margin-top: 50px;
+    }
+    .evi--descrip{
+        font-size: 0.8em;
+        margin-top: 15px;
+    }
+    .img{
+        width: 250px;
+        height: 500px;
+    }
+    .carrosel{
+        width: 250px;
+        height: 500px;
+    }
+    .Direita{
+        transform: translate(150px,400px);
+        width: 50px;
+    }
+    .Esquerda{
+        width: 50px;
+        transform: translate(-150px,400px);
+    }
+    .promo{
+        font-size: 0.9em;
+        margin-top: 30px;
+    }
+
+
+    /* Benefits */
+    .Benefits{
+        height: 800px;
+        padding: 0px 10px;
+    }
+    .line{
+        margin-top: 230px;
+        margin-bottom: 70px;
+    }
+    .benefits--title{
+        font-size: 1.5em;
+    }
+    .benefits--subtitle{
+        font-size: 0.9em;
+    }
+    .benefits--box{
+        font-size: 0.6em;
+    }
+    .Certo{
+        width: 50px;
+    }
+
+
+    /* Scarcity */
+    .Scarcity{
+        padding: 60px 10px;
+    }
+    .scarcity--title{
+        font-size: 1em;
+    }
+    .scarcity--subtitle{
+        font-size: 0.7em;
+        margin-top: 10px;
+    }
+    .paragraf-one{
+        font-size: 0.8em;
+        
+    }
+    .timer{
+        font-size: 2em;
+        margin-top: 45px;
+        color: #FF0000;
+    }
+    .sideparagr--one{
+        font-size: 0.88em;
+    }
+    .final--value{
+        font-size: 2.5em;
+    }
 }
